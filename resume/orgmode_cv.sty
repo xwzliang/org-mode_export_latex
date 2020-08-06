@@ -1,0 +1,70 @@
+\ProvidesPackage{orgmode_cv}
+
+\usepackage{url}
+\usepackage{calc}
+\usepackage{parskip}            % ignore paragraph prefix space
+\usepackage{titlesec}           % custom section
+\usepackage{enumitem}           % custom lists
+
+%% \usepackage[big]{layaureo} % Margin formatting of the A4 page, an
+                           % alternative to layaureo can be
+                           % \usepackage{fullpage}
+                           % To reduce the height of the top margin
+                           % uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+%% Define Colors
+\usepackage{color}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolour,linkcolor=linkcolour}
+
+\definecolor{my_blue}{RGB}{46,116,181}
+
+\pagestyle{empty} % Removes page numbering
+
+%% Set all text's left skip
+%% \leftskip=0.17\textwidth
+
+%% Config list
+\usepackage{enumitem}
+
+% -------------------------------------------------------------------
+% REDEFINE COMMANDS
+% -------------------------------------------------------------------
+
+%% Redefine Title
+\renewcommand*{\maketitle}{%
+  {
+     \centering{\LARGE\color{my_blue}\textbf\@title}\\[.1in]
+  }
+}
+
+%% Redefine Section Headings, etc.
+\titleformat{\section} %command
+            {\large\scshape\raggedright\color{my_blue}\textbf} %format
+            {} %prefix number label
+            {0em} %sep
+            {} %before
+            [\titlerule] %after
+\titlespacing{\section}{0pt}{15pt}{15pt}
+
+\titleformat{\subsection} %command
+            %% [leftmargin] %shape
+            {\normalsize\raggedright} %format
+            {} %prefix number label
+            {0pt} %sep
+            {} %before
+            [] %after
+\titlespacing{\subsection}
+            {0.15\textwidth}% max width of the title(for wrap/leftmargin shape)
+            {5pt}% vertical space before the title
+            {15pt}% separation between title and text

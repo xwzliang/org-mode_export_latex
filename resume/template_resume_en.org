@@ -1,0 +1,71 @@
+#+OPTIONS: toc:nil H:10 ':t
+
+#+LaTeX_HEADER: \usepackage{orgmode_cv}
+
+#+TITLE: NAME
+
+#+BEGIN_CENTER
+Github: https://github.com/XXX
+
+Phone | Email | DOB: xx/xx/xxxx
+#+END_CENTER
+
+* Work Experience
+#+ATTR_HTML: :frame void
+#+LATEX: \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+#+ATTR_LATEX: :environment tabularx :width \textwidth :align lR
+| <l>            |                    <r> |
+| *2012-Current* |                   text |
+text text text text text text text text text text text text text
+text text text text text text text text text text text text text
+- text
+- text
+
+* Education
+** 2006-2010
+   text text text text text text text text text
+* Computer Skills
+#+ATTR_HTML: :frame void
+#+LATEX: \newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+#+LATEX: \newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+#+ATTR_LATEX: :environment tabularx :width \textwidth :align L{0.5}L{1.5}
+| <l>       |                                                                              |
+| C         | text text text                                                               |
+| C++       | text text text                                                               |
+| Java      | text text text                                                               |
+| Android   | text text text                                                               |
+| Python    | text text text                                                               |
+| Network   | text text text                                                               |
+| Shell     | text text text                                                               |
+| Linux     | text text text                                                               |
+| Dev Tools | text text text                                                               |
+| Learning  | text text text, text text text text text text text text text text text text |
+
+* Languages
+** English
+   text text text text
+
+* Projects
+** Project One
+   Homepage: https://github.com/project_one
+
+   description, text text text text text text text text text
+
+** Project Two
+   Homepage: https://github.com/project_two
+
+   description, text text text text text text text text text text text
+   text text text text text text text text text text text text text
+   text
+
+* Demo Level One
+** Level Two
+   *Content under level two*
+
+   text text text text text text text text text text text text text
+   text text text text text text text text text text text text text
+** Level Two
+   *Content under level two*
+
+   text text text text text text text text text text text text text
+   text text text text text text text text text text text text text
